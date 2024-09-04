@@ -1,0 +1,15 @@
+// Colores
+$purple-dark: #7B1FA2; 
+$purple-light: #BA68C8;
+$green: #81C784;
+$white: #fefefe;
+$black: #403A43;
+$red: #D00000;
+$grey:#d4d4d4;
+
+// Fuentes
+@mixin font($color, $font-weight, $font-size) {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
