@@ -5,3 +5,19 @@ html, body {
     overflow-x: hidden;
     overflow-y: hidden; 
 }
+
+/* Estilos barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Estilo de la "thumb" */
+::-webkit-scrollbar-thumb {
+    background: $green; 
+    border-radius: 6px;
+}

@@ -1,5 +1,6 @@
 .SummaryActivityFood{
     height: 100%;
+    margin: 0px 40px;
 
     &__title{
         @include font($black,600,22px);
@@ -49,7 +50,6 @@
         }
         div{
             display: flex;
-            height: 100px;
             align-items: center;
             justify-content: space-around;
         }

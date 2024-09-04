@@ -10,6 +10,22 @@ html, body {
   overflow-y: hidden;
 }
 
+/* Estilos barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Fondo de la barra */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Estilo de la "thumb" */
+::-webkit-scrollbar-thumb {
+  background: #81C784;
+  border-radius: 6px;
+}
+
 .header {
   border-bottom: 1px solid #d4d4d4;
 }
@@ -41,6 +57,8 @@ html, body {
   justify-content: space-between;
   height: 70%;
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form__form-item {
   display: flex;
@@ -71,6 +89,7 @@ html, body {
 
 .SummaryActivityFood {
   height: 100%;
+  margin: 0px 40px;
 }
 .SummaryActivityFood__title {
   color: #403A43;
@@ -120,7 +139,6 @@ html, body {
 }
 .SummaryActivityFood__container div {
   display: flex;
-  height: 100px;
   align-items: center;
   justify-content: space-around;
 }

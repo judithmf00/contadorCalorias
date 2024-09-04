@@ -9,8 +9,8 @@ export default function SummaryActivityFood() {
               <svg xmlns="http://www.w3.org/2000/svg" height="21px" viewBox="0 -960 960 960" width="24px" fill="#fefefe"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             </button>
             <h3>Comida</h3>
-            <div>
-              <div>
+            <div className="flex flex-col sm:flex-row">
+              <div className="sm:h-28 h-32">
                 <p>Manzana</p>
                 <span className="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#403A43">
@@ -30,7 +30,7 @@ export default function SummaryActivityFood() {
             </button>
             <h3 className="h3__comida">Comida</h3>
             <div>
-                <div>
+                <div className="sm:h-28 h-32">
                   <p>Manzana</p>
                   <span className="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#403A43">
@@ -50,7 +50,7 @@ export default function SummaryActivityFood() {
             </button>
             <h3 className="h3__comida">Comida</h3>
             <div>
-              <div>
+              <div className="sm:h-28 h-32">
                 <p>Manzana</p>
                 <span className="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#403A43">
