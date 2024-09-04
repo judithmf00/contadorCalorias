@@ -1,0 +1,18 @@
+.containerSummary{
+    background-color: $purple-dark;
+    color: $white;
+    height: 100%;
+
+    h2{
+        @include font($white,400,24px);
+    }
+    section{
+        text-align: center;
+        line-height: 30px;
+        
+        p:first-of-type{
+            @include font($white,400,44px);
+        }
+       
+    }
+}

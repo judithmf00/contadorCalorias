@@ -1,0 +1,57 @@
+.SummaryActivityFood{
+    height: 100%;
+
+    &__title{
+        @include font($black,600,22px);
+        text-align: center;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__section{
+            border: 1px solid $grey;
+            margin: 15px 0px;
+            position: relative;
+            border-radius: 10px;
+            @include font($black,300,22px);
+
+            .icon{
+                margin: 0px 15px;
+            }
+
+            & > button{
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background-color: $red;
+                width: 25px;
+                height: 25px;
+                border-radius: 100px;
+            }
+        }
+
+       
+
+        h3{
+            position: absolute;
+            top: 10px;
+            left: -40px;
+            @include font($white,400,18px);
+            padding: 0px 20px;
+            border-radius: 5px;
+            background-color: $green;
+        }
+        .h3__comida{
+            background-color: $purple-light;
+        }
+        div{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}

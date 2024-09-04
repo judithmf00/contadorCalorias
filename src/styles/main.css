@@ -69,4 +69,80 @@ html, body {
   padding: 5px;
 }
 
+.SummaryActivityFood {
+  height: 100%;
+}
+.SummaryActivityFood__title {
+  color: #403A43;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+.SummaryActivityFood__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.SummaryActivityFood__container__section {
+  border: 1px solid #d4d4d4;
+  margin: 15px 0px;
+  position: relative;
+  border-radius: 10px;
+  color: #403A43;
+  font-weight: 300;
+  font-size: 22px;
+}
+.SummaryActivityFood__container__section .icon {
+  margin: 0px 15px;
+}
+.SummaryActivityFood__container__section > button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #D00000;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+}
+.SummaryActivityFood__container h3 {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  background-color: #81C784;
+}
+.SummaryActivityFood__container .h3__comida {
+  background-color: #BA68C8;
+}
+.SummaryActivityFood__container div {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containerSummary {
+  background-color: #7B1FA2;
+  color: #fefefe;
+  height: 100%;
+}
+.containerSummary h2 {
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 24px;
+}
+.containerSummary section {
+  text-align: center;
+  line-height: 30px;
+}
+.containerSummary section p:first-of-type {
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 44px;
+}
+
 /*# sourceMappingURL=main.css.map */
