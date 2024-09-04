@@ -1,0 +1,35 @@
+.form{
+    background-color: $green;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    width: 70%;
+
+    &__form-item{
+        display: flex;
+        flex-direction: column; 
+
+        label{
+            @include font($white,400,18px)
+        }
+
+        input{
+            border-radius: 5px;
+            @include font($black,400,16px);
+            padding: 2px 5px;
+        }
+
+        button{
+            background-color: $purple-dark;
+            @include font($white,400,18px);
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 5px;
+        }
+    }
+}

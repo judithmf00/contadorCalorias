@@ -5,6 +5,11 @@
   font-family: "Roboto Condensed";
 }
 
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .header {
   border-bottom: 1px solid #d4d4d4;
 }
@@ -24,6 +29,44 @@
 .header__button:hover {
   transform: scale(0.95);
   background-color: #7B1FA2;
+}
+
+.form {
+  background-color: #81C784;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  width: 70%;
+}
+.form__form-item {
+  display: flex;
+  flex-direction: column;
+}
+.form__form-item label {
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 18px;
+}
+.form__form-item input {
+  border-radius: 5px;
+  color: #403A43;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+.form__form-item button {
+  background-color: #7B1FA2;
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

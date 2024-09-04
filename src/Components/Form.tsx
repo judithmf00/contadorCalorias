@@ -14,6 +14,9 @@ export default function Form() {
             <label htmlFor="">Calorías</label>
             <input type="text" />
         </div>
+        <div className="form__form-item">
+          <button>Guardar</button>
+        </div>
     </form>
   )
 }

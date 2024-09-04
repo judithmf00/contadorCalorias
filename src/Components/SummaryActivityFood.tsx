@@ -1,7 +1,7 @@
 
 export default function SummaryActivityFood() {
   return (
-    <div>
+    <div >
       <h2>Comida y actividades</h2>
       <article>
         <section>
