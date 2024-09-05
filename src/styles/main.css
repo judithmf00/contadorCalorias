@@ -69,14 +69,14 @@ html, body {
   font-weight: 400;
   font-size: 18px;
 }
-.form__form-item input {
+.form__form-item input, .form__form-item select {
   border-radius: 5px;
   color: #403A43;
   font-weight: 400;
   font-size: 16px;
   padding: 2px 5px;
 }
-.form__form-item button {
+.form__form-item input[type=submit] {
   background-color: #7B1FA2;
   color: #fefefe;
   font-weight: 400;
