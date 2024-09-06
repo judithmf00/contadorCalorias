@@ -1,22 +1,31 @@
-import { useState } from "react"
+import { useState,ChangeEvent } from "react"
 import { categories } from "../data/db"
+import { Activity } from "../types";
 
 export default function Form() {
 
-  const [activity,setActivity] = useState({
+  const [activity,setActivity] = useState<Activity>({
     category: 1, 
     name: '',
     calories:0,
   })
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
-    const { name, value } = e.target;
+  const isValidForm =()=>{
+    const {name, calories} = activity;
+    return name != "" && calories > 0 ?  true : false
+  }
+
+  function handleChange(e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+    const { id, value } = e.target;
+    isValidForm()
+    
     setActivity((prevActivity) => ({
       ...prevActivity,
-      [name]:  name === 'calories' ? +value : value, // Convierte a número si es 'calories',
+      [id]:  id === 'calories' || id === 'category' ? +value : value, // Convierte a número si es 'calories',
     }));
-    console.log(activity)
+    
   }
+  console.log(isValidForm())
 
   return (
     <form action="" className="form">
@@ -34,10 +43,10 @@ export default function Form() {
         </div>
         <div className="form__form-item">
             <label htmlFor="">Calorías</label>
-            <input type="number" name="calories" onChange={handleChange}/>
+            <input type="number" id="calories" onChange={handleChange} value={activity.calories}/>
         </div>
         <div className="form__form-item">
-          <input type="submit" value="Guardar" />
+          <input type="submit" value={activity.category == 1 ? "Guardar comida" : "Guardar ejercicio"} className="disabled:opacity-50" disabled={!isValidForm()} />
         </div>
     </form>
   )
