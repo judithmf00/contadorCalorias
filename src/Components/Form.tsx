@@ -1,4 +1,4 @@
-import { useState,ChangeEvent } from "react"
+import { useState,ChangeEvent, FormEvent } from "react"
 import { categories } from "../data/db"
 import { Activity } from "../types";
 
@@ -25,10 +25,13 @@ export default function Form() {
     }));
     
   }
-  console.log(isValidForm())
+  
+  const handleSubmit=(e:FormEvent<HTMLFormElement>)=>{
+    e.preventDefault()
+  }
 
   return (
-    <form action="" className="form">
+    <form className="form" onSubmit={handleSubmit}>
         <div className="form__form-item">
             <label htmlFor="category">Categoría</label>
             <select name="category" id="category" value={activity.category} onChange={handleChange}>
