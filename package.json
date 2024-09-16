@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://judithmf00.github.io/contadorCalorias",
+  "homepage": "https://judithmf00.github.io/contadorCalorias",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d dist",
